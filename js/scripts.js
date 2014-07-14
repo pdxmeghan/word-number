@@ -9,12 +9,39 @@ function wordNumber(number) {
       finalWords.push(singles[input[i]]);
     } else if (i === 1) {
       finalWords.push(tens[input[i]]);
+    } else if (i === 2) {
+      finalWords.push("hundred");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 3) {
+      finalWords.push("thousand");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 4) {
+      finalWords.push(tens[input[i]]);
+    }  else if (i === 5) {
+      finalWords.push("hundred thousand");
+      finalWords.push(singles[input[i]]);
+    }  else if (i === 6) {
+      finalWords.push("million");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 7) {
+      finalWords.push(tens[input[i]]);
+    } else if (i === 8) {
+      finalWords.push("hundred million");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 9) {
+      finalWords.push("billion");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 10) {
+      finalWords.push(tens[input[i]]);
+    } else if (i === 11) {
+      finalWords.push("hundred billion");
+      finalWords.push(singles[input[i]]);
+    } else if (i === 12) {
+      finalWords.push("trillion");
+      finalWords.push(singles[input[i]]);
     }
-  }
+};
 
   var answer = finalWords.reverse().join(" ");
   return answer;
 };
-
-
-//finalWords.push("hundred" + [input[i]])
