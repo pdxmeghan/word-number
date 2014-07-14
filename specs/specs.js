@@ -3,6 +3,6 @@ describe("wordNumber", function() {
     wordNumber("5").should.equal("five");
   });
   it("will return a word for a two-digit number", function() {
-    wordNumber("23").should.equal("twenty-three");
+    wordNumber("23").should.equal("twenty three");
   });
 });
